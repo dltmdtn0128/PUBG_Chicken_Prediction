@@ -34,7 +34,7 @@
 * winPlacePerc - The target of prediction. This is a percentile winning placement, where 1 corresponds to 1st place, and 0 corresponds to last place in the - - match. It is calculated off of maxPlace, not numGroups, so it is possible to have missing chunks in a match.
 
 1. 사용된 package
-```
+```python:
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
