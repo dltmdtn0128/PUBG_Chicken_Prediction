@@ -1,9 +1,5 @@
 # PUBG_Chicken_Prediction
-<<<<<<< HEAD
 ## 이 프로젝트의 목표는 PUBG 데이터를 이용하여 플레이어가 우승을 하는데 어느 feature가 중요한지 분석을 하고 추출한 feature들을 통해 승자를 예측할 수 있는 모델을 만드는 것이다. 
-
-=======
->>>>>>> 7134a2d3242a05caa7ac73b2a9aec1e0a9adbef7
 
 ###Data fields
 
@@ -36,3 +32,23 @@
 * numGroups - Number of groups we have data for in the match.
 * maxPlace - Worst placement we have data for in the match. This may not match with numGroups, as sometimes the data skips over placements.
 * winPlacePerc - The target of prediction. This is a percentile winning placement, where 1 corresponds to 1st place, and 0 corresponds to last place in the - - match. It is calculated off of maxPlace, not numGroups, so it is possible to have missing chunks in a match.
+
+1. 사용된 package
+'''
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from pgmpy.models import BayesianModel
+import matplotlib.pyplot as plt
+import seaborn as sns
+import scipy.stats as ss
+from sklearn.preprocessing import MinMaxScaler, LabelEncoder
+from xgboost import XGBRegressor, plot_importance
+from sklearn.model_selection import GridSearchCV, train_test_split,cross_val_score
+import optuna
+from optuna import Trial, visualization
+from optuna.samplers import TPESampler
+'''
+
+2. EDA
+
