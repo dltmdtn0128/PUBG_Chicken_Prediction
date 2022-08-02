@@ -1,4 +1,9 @@
 # PUBG_Chicken_Prediction
+<<<<<<< HEAD
+## 이 프로젝트의 목표는 PUBG 데이터를 이용하여 플레이어가 우승을 하는데 어느 feature가 중요한지 분석을 하고 추출한 feature들을 통해 승자를 예측할 수 있는 모델을 만드는 것이다. 
+
+=======
+>>>>>>> 7134a2d3242a05caa7ac73b2a9aec1e0a9adbef7
 
 ###Data fields
 
